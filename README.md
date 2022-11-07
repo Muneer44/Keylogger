@@ -82,7 +82,7 @@ instead of just using the system interpreter.*
 NOTE: This function is deliberately limited to HTTP websites only to prevent malicious use.
 
 
-## Legal Disclaimer
+## Disclaimer
 The use of code contained in this repository, either in part or in its totality,
 for engaging targets without prior mutual consent is illegal. **It is
 the end user's responsibility to obey all applicable local, state and
