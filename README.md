@@ -13,19 +13,16 @@ It includes features such as :
 - Packet Sniffer 
 
 
-This application depends exclusively on the Python 3.* 
+This application exclusively depends on Python 3.* and Linux.
 
-
-## Demo
-![sniffer_demo](https://user-images.githubusercontent.com/15611424/178045423-067df4ec-1853-400e-9b5a-10154cb6fcc1.gif)
 
 ## Installation process
 clone this repository with `git clone`, install the `scapy` module and execute the `Handler.py` file.
 ```
 user@host:~$ git clone https://github.com/Muneer44/Network-Manipulation-Suite.git
 user@host:~$ cd Network-Manipulation-Suite
-user@host:~/packet-sniffer$ pip install scapy
-user@host:~/packet-sniffer$ sudo python3 Network-Manipulation-Suite/Handler.py
+user@host:~/Network-Manipulation-Suite$ pip install scapy
+user@host:~/Network-Manipulation-Suite$ sudo python3 Network-Manipulation-Suite/Handler.py
 ```
 
 *The `sudo` command is required as the script performs core system functionalities.*
@@ -59,6 +56,33 @@ instead of just using the system interpreter.*
 
 ```
 ### I. MAC Spoofer
+- *Change device's MAC address to desired new MAC address.*
+
+![MAC-Spoofer](https://user-images.githubusercontent.com/117259069/200348959-5992fa38-5199-4404-871c-c202b7039b8e.gif)
+
+### II. Network Scanner
+- *Scan for active clients in the network.*
+
+![Network-Scanner-m](https://user-images.githubusercontent.com/117259069/200354111-be6f9163-c157-4f99-80df-7b8febfb03dc.gif)
+
+### III. ARP Spoofer
+- *Perform MiTM(Man in The Middle).*
+
+![ARP-Spoofer](https://user-images.githubusercontent.com/117259069/200348952-fe250132-05fe-4dc4-8463-d1d45a628710.gif)
+
+### IV. ARP Spoof Detector
+- *Detects and Alerts on being attacked*
+- The program works even if executed in the middle of an ongoing ARP-Spoof attack.
+
+![ARP-Detector](https://user-images.githubusercontent.com/117259069/200347861-1aa659f0-5624-4c9c-85a5-3fdd5bf14365.gif)
+
+### V. Packet Sniffer
+- *Sniff network packets, and filter to retrieve remote Host's 'requested URL and Potential Credentials'*
+- Notice 'ARP Spoofer' is separately started in a different terminal prior to packet sniffing.
+
+![Packet-Sniffer](https://user-images.githubusercontent.com/117259069/200348965-f82ce63b-a873-436c-aafb-2e1947e41131.gif)
+
+NOTE: This function is deliberately limited to HTTP websites only to prevent malicious use.
 
 
 ## Legal Disclaimer
@@ -67,19 +91,4 @@ for engaging targets without prior mutual consent is illegal. **It is
 the end user's responsibility to obey all applicable local, state and
 federal laws.**
 
-Developers assume **no liability** and are not
-responsible for misuses or damages caused by any code contained
-in this repository in any event that, accidentally or otherwise, it comes to
-be utilized by a threat agent or unauthorized entity as a means to compromise
-the security, privacy, confidentiality, integrity, and/or availability of
-systems and their associated resources. In this context the term "compromise" is
-henceforth understood as the leverage of exploitation of known or unknown vulnerabilities
-present in said systems, including, but not limited to, the implementation of
-security controls, human- or electronically-enabled.
-
-The use of this code is **only** endorsed by the developers in those
-circumstances directly related to **educational environments** or
-**authorized penetration testing engagements** whose declared purpose is that
-of finding and mitigating vulnerabilities in systems, limiting their exposure
-to compromises and exploits employed by malicious agents as defined in their
-respective threat models.
+This script is purely intended for educational purpose [PoC]. Do not use it to compromise any unauthorized device, demonstrate on your own device only.
