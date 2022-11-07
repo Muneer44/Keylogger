@@ -5,6 +5,9 @@ from datetime import datetime
 
 
 class ARPSpoofDetector:
+    def __init__(self, iface):
+        self.iface = iface
+        
     def get_mac(self, ip):
         arp_request = scapy.ARP(pdst=ip)
         broadcast = scapy.Ether(dst="ff:ff:ff:ff:ff:ff")
@@ -34,5 +37,5 @@ class ARPSpoofDetector:
 
     def start(self):
 
-        self.sniff("eth0")  # Interface to Monitor
+        self.sniff(self.iface)  
 
