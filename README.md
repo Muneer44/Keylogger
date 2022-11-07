@@ -1,8 +1,5 @@
 # Python based Network Manipulation Suite
 
-[![LinkedIn](https://img.shields.io/badge/Reddit-EONRaider-FF4500?style=flat-square&logo=reddit)](https://www.linkedin.com/in/muneer44/)
-[![Discord](https://img.shields.io/badge/Discord-EONRaider-7289DA?style=flat-square&logo=discord)](https://discord.gg/KVjWBptv)
-[![Twitter](https://img.shields.io/badge/Twitter-eon__raider-38A1F3?style=flat-square&logo=twitter)](https://twitter.com/intent/follow?screen_name=eon_raider)
 
 The Network Manipulation Suite is extinsively designed to ease the network handling tasks. 
 It includes features such as :
