@@ -42,6 +42,7 @@ def options(choice):
         arp_spoof.start()
 
     elif choice == "4":  # ARP Spoof Detector
+        iface = input("Enter interface to monitor: ")
         arp_spoof_detector = ARPSpoofDetector.ARPSpoofDetector()
         arp_spoof_detector.start()
 
