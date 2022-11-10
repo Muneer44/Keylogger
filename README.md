@@ -1,7 +1,7 @@
 # Python based Network Manipulation Suite
 
 
-The Network Manipulation Suite is extinsively designed to ease the network handling tasks. 
+The Network Manipulation Suite is extensively designed to ease network handling tasks. 
 It includes features such as :
 - MAC Spoofing
 - Network Clients Scanning
@@ -24,7 +24,7 @@ user@host:~/Network-Manipulation-Suite$ sudo python3 Network-Manipulation-Suite/
 
 *The `sudo` command is required as the script performs core system functionalities.*
 
-*Notice that the existence of `scapy` may require the virtual environment to have scapy module installed for executing in the venv interpreter (if you use one),
+*Notice that the existence of `scapy` may require the virtual environment to have the "scapy" module installed for execution in the venv interpreter (if you use one),
 instead of just using the system interpreter.*
 
 ## Usage
@@ -88,4 +88,4 @@ for engaging targets without prior mutual consent is illegal. **It is
 the end user's responsibility to obey all applicable local, state and
 federal laws.**
 
-This script is purely intended for educational purpose [PoC]. Do not use it to compromise any unauthorized device, demonstrate on your own device only.
+This script is purely intended for educational purposes [PoC]. Do not use it to compromise any unauthorized device, demonstrate on your own device only.
